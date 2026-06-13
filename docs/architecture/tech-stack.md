@@ -175,7 +175,18 @@
 
 ### Backend
 
+- Backend For Frontend (BFF)
 - Modular Monolith
+
+### API Layer
+
+The API exposes BFF endpoints optimized for frontend consumption.
+
+Frontend applications do not communicate directly with domain modules.
+
+Flow:
+
+Frontend → BFF → Domain Modules → Prisma → PostgreSQL
 
 ### Repository Strategy
 

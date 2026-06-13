@@ -9,14 +9,19 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.101.0",
+    "lucide-react": "^1.18.0",
     "next": "^16.2.9",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "react-hook-form": "^7.79.0",
     "react-router-dom": "^7.17.0",
-    "sass": "*",
-    "@tanstack/react-query": "*",
-    "react-hook-form": "*",
-    "zod": "*",
-    "lucide-react": "*"
+    "sass": "^1.101.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^4.3.1"
   }
 }

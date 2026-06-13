@@ -501,3 +501,42 @@ If a screen does not directly support:
 - Progression
 
 it should not be included in the MVP.
+
+# Client Applications
+
+## Web
+
+Reader-facing application.
+
+Features:
+
+- Discovery
+- Reading
+- Progress Tracking
+- Gamification
+
+---
+
+## Mobile
+
+Reader-facing mobile application.
+
+Features:
+
+- Reading
+- Offline Reading (Future)
+- Progress Tracking
+
+---
+
+## Admin
+
+Internal administration portal.
+
+Features:
+
+- Catalog Management
+- Author Management
+- User Management
+- Subscription Monitoring
+- Analytics
