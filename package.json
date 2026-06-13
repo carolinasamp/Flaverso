@@ -18,9 +18,7 @@
     "build:packages": "for d in packages/*; do [ -f \"$d/package.json\" ] && (cd \"$d\" && npm run build || true); done",
     "build:web": "(cd apps/web && npm run build || true)",
     "build:api": "(cd apps/api && npm run build || true)",
-    "build:all": "npm run build && npm run build:packages && npm run build:web && npm run build:api"
-  },
-  "scripts": {
+    "build:all": "npm run build && npm run build:packages && npm run build:web && npm run build:api",
     "lerna:bootstrap": "npx lerna bootstrap --hoist",
     "lerna:publish": "npx lerna publish",
     "lerna:version": "npx lerna version",
