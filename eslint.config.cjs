@@ -1,22 +1,22 @@
-const { FlatCompat } = require('@eslint/eslintrc');
-const recommended = require('eslint/conf/eslint-recommended');
-const compat = new FlatCompat({ baseDirectory: __dirname, recommendedConfig: recommended && (recommended.default || recommended) });
-
 module.exports = [
-  // bring in legacy configs
-  ...compat.extends(
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'prettier'
-  ),
-  // project specific rules
   {
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2022,
-      sourceType: 'module'
+      sourceType: 'module',
+      parser: require('@typescript-eslint/parser'),
+      parserOptions: {
+        ecmaVersion: 2022,
+        sourceType: 'module',
+        ecmaFeatures: { jsx: true }
+      }
     },
+    plugins: {
+      '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
+      react: require('eslint-plugin-react'),
+      'react-hooks': require('eslint-plugin-react-hooks')
+    },
+    settings: { react: { version: 'detect' } },
     rules: {
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       'react/prop-types': 'off',
@@ -25,9 +25,6 @@ module.exports = [
         'error',
         { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' }
       ]
-    },
-    settings: {
-      react: { version: 'detect' }
     }
   }
 ];
