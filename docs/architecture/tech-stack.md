@@ -2,6 +2,8 @@
 
 ## Monorepo
 
+### Core
+
 - Turborepo
 - TypeScript
 
@@ -17,7 +19,8 @@
 
 ### Styling
 
-- Sass
+- Tailwind CSS
+- Sass (SCSS)
 
 ### State Management
 
@@ -111,13 +114,21 @@
 
 ---
 
-## Design System
+## UI Foundation
 
 ### Component Library
 
-- Custom Design System
+- shadcn/ui
 
-### Documentation
+### Icons
+
+- Lucide
+
+### Design System
+
+- Custom Design Tokens
+
+### Component Documentation
 
 - Storybook
 
@@ -169,31 +180,3 @@
 ### Repository Strategy
 
 - Monorepo
-
----
-
-## Project Structure
-
-```text
-flaverso/
-│
-├── apps/
-│   ├── web/
-│   ├── mobile/
-│   ├── admin/
-│   └── api/
-│
-├── packages/
-│   ├── ui/
-│   ├── design-tokens/
-│   ├── types/
-│   ├── utils/
-│   ├── eslint-config/
-│   └── tsconfig/
-│
-├── docs/
-│
-├── infrastructure/
-│
-└── .github/
-```

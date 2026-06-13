@@ -12,6 +12,10 @@
     "@nestjs/core": "^11.1.26",
     "@nestjs/platform-express": "^11.1.26",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.2"
+    "rxjs": "^7.8.2",
+    "@prisma/client": "*"
+  },
+  "devDependencies": {
+    "prisma": "*"
   }
 }
