@@ -36,3 +36,6 @@ coverage/
 
 # Packages
 packages/*/node_modules/
+
+*storybook.log
+storybook-static
