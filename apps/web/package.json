@@ -22,19 +22,20 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "autoprefixer": "^10.5.0",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^4.3.1",
-    "storybook": "^10.4.4",
-    "@storybook/react-vite": "^10.4.4",
     "@chromatic-com/storybook": "^5.2.1",
-    "@storybook/addon-vitest": "^10.4.4",
     "@storybook/addon-a11y": "^10.4.4",
     "@storybook/addon-docs": "^10.4.4",
     "@storybook/addon-mcp": "^0.6.0",
-    "eslint-plugin-storybook": "^10.4.4",
-    "vitest": "^4.1.8",
+    "@storybook/addon-vitest": "^10.4.4",
+    "@storybook/react-vite": "^10.4.4",
+    "@tailwindcss/postcss": "^4.3.1",
     "@vitest/browser-playwright": "^4.1.8",
-    "@vitest/coverage-v8": "^4.1.8"
+    "@vitest/coverage-v8": "^4.1.8",
+    "autoprefixer": "^10.5.0",
+    "eslint-plugin-storybook": "^10.4.4",
+    "postcss": "^8.4.31",
+    "storybook": "^10.4.4",
+    "tailwindcss": "^4.3.1",
+    "vitest": "^4.1.8"
   }
 }
