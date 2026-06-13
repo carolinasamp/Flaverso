@@ -1,6 +1,6 @@
 {
   "name": "flaverso",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Flaverso - reading platform",
   "main": "index.js",
@@ -25,9 +25,9 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/carolinasamp/Flaverso.git"
   },
-  "author": "",
+  "author": "casrocha",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^21.0.2",
@@ -45,7 +45,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "husky": "^8.0.0",
+    "husky": "^8.0.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.4.2",
     "lint-staged": "^17.0.7",
