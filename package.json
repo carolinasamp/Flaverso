@@ -20,6 +20,17 @@
     "build:api": "(cd apps/api && npm run build || true)",
     "build:all": "npm run build && npm run build:packages && npm run build:web && npm run build:api"
   },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "lerna": {
+    "version": "independent",
+    "packages": [
+      "packages/*",
+      "apps/*"
+    ]
+  },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
       "eslint --fix",
