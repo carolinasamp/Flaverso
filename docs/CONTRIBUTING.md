@@ -211,7 +211,6 @@ npm run test -- --runInBand
 npm run build --if-present || npx tsc -b
 ```
 
-
 Pre-commit checklist (example)
 
 - Run `npm run format` and ensure no formatting errors remain.
